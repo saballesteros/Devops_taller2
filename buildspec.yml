@@ -5,6 +5,9 @@ phases:
     commands:
       - pip install -r requirements.txt
       - echo "🚀 Compilando... ✨"
+  build:
+    commands:
+      - python -m unittest discover
 artifacts:
   files:
     - '**/*'
